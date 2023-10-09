@@ -1,0 +1,22 @@
+{
+  "name": "udenixautomation",
+  "version": "1.0.0",
+  "description": "Automation regression tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testUiAutomation": "npx cypress run --spec 'cypress/e2e/Test Case 1' --browser chrome --headless",
+    "test:uiAutomationFull": "node_modules/cypress/bin/cypress run run --spec 'cypress/e2e' --browser chrome --headless --browser chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nashifBhai/automation.git"
+  },
+  "author": "Nashif Iftekhar",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress-file-upload": "^5.0.8",
+    "cypress-mochawesome-reporter": "^3.5.1",
+    "cypress-xpath": "^2.0.1"
+  }
+}
